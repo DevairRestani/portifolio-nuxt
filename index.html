@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Portfólio — Devair Ap. Restani Jr</title>
+<style>
+:root {
+  --accent: #1E88E5;
+  --text: #222;
+  --muted: #555;
+  --bg: #fafafa;
+  --font: "Courier New", Courier, monospace;
+}
+body {
+  margin: 0;
+  background: var(--bg) url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="600" height="600"><rect width="600" height="600" fill="%23fafafa"/><circle cx="300" cy="300" r="1" fill="%23eaeaea"/></svg>') repeat;
+  font-family: var(--font);
+  color: var(--text);
+  line-height: 1.6;
+  padding: 40px;
+  max-width: 900px;
+  margin: auto;
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid var(--accent);
+  padding-bottom: 8px;
+  margin-bottom: 20px;
+}
+.lang-switch button {
+  background: transparent;
+  border: 1px solid var(--muted);
+  color: var(--muted);
+  padding: 4px 8px;
+  font-family: var(--font);
+  cursor: pointer;
+  margin-left: 4px;
+}
+.lang-switch button.active {
+  background: var(--accent);
+  color: white;
+  border-color: var(--accent);
+}
+h1, h2, h3 {
+  color: var(--accent);
+  margin: 20px 0 10px 0;
+}
+.hero p {
+  margin: 0 0 10px 0;
+}
+.highlights {
+  margin-top: 30px;
+}
+.highlights p {
+  margin: 0 0 8px 0;
+}
+.timeline {
+  margin-top: 40px;
+}
+.timeline-item {
+  margin-bottom: 24px;
+}
+.timeline-year {
+  font-weight: bold;
+  color: var(--accent);
+}
+.job-title {
+  font-weight: bold;
+}
+.job-desc {
+  margin: 6px 0 0 20px;
+}
+.skills {
+  margin-top: 40px;
+}
+footer {
+  margin-top: 40px;
+  border-top: 1px solid #ccc;
+  padding-top: 10px;
+  font-size: 14px;
+  color: var(--muted);
+}
+
+/* PRINT STYLES */
+@media print {
+  body {
+    background: white !important;
+    border: none !important;
+    padding: 20px !important;
+    max-width: none !important;
+  }
+  h1, h2, h3, .timeline-year {
+    color: black !important;
+  }
+  header, .lang-switch {
+    display: none !important;
+  }
+  a::after {
+    content: " (" attr(href) ")";
+    font-size: 90%;
+    color: #555;
+  }
+  footer {
+    border-top: 1px solid #000;
+    color: black !important;
+  }
+  @page {
+    margin: 0;
+  }
+}
+</style>
+</head>
+<body>
+<header>
+  <div><strong>Portfólio</strong></div>
+  <div class="lang-switch">
+    <button data-lang="pt" class="active">PT</button>
+    <button data-lang="en">EN</button>
+    <button data-lang="it">IT</button>
+  </div>
+</header>
+
+<section class="hero">
+  <h1 id="name">Devair Ap. Restani Jr</h1>
+  <h2 id="title">Senior Web Developer</h2>
+  <p id="summary">Desenvolvedor de Software Sênior com 5 anos de experiência liderando equipes, projetando arquiteturas robustas e otimizando aplicações para alta performance.</p>
+</section>
+
+<section class="highlights">
+  <h2 id="highTitle">Principais Destaques</h2>
+  <p><strong id="h1">Liderança Técnica</strong> — <span id="h1txt">Experiência como líder técnico, mentorando desenvolvedores e guiando equipes na entrega de projetos complexos.</span></p>
+  <p><strong id="h2">Arquitetura de Sistemas</strong> — <span id="h2txt">Definição e implementação de arquiteturas de micro-serviços, escaláveis e seguras, alinhadas a objetivos de negócio.</span></p>
+  <p><strong id="h3">Otimização & Performance</strong> — <span id="h3txt">Projetos com redução de custos e melhoria de performance, incluindo unificação de bases e otimização de código.</span></p>
+</section>
+
+<section class="timeline">
+  <h2 id="expTitle">Experiência Profissional</h2>
+
+  <div class="timeline-item">
+    <div class="timeline-year">2024 — Presente</div>
+    <div class="job-title" id="j1role">Senior Web Developer — EDUCACROSS</div>
+    <ul class="job-desc" id="j1list">
+      <li>Mentoria e liderança técnica de uma equipe de 4 desenvolvedores.</li>
+      <li>Definição de arquitetura de micro-serviços, reduzindo 25% dos bugs em produção.</li>
+      <li>Melhoria da comunicação entre desenvolvimento e negócio.</li>
+    </ul>
+  </div>
+
+  <div class="timeline-item">
+    <div class="timeline-year">2022 — 2024</div>
+    <div class="job-title" id="j2role">Pleno Web Developer — EDUCACROSS</div>
+    <ul class="job-desc" id="j2list">
+      <li>Unificação de projetos legados (Angular e Vue.js) em uma única base Vue.js.</li>
+      <li>Redução de custos em 15% e aumento de 30% na performance.</li>
+      <li>Modernização do código e melhoria de UX.</li>
+    </ul>
+  </div>
+
+  <div class="timeline-item">
+    <div class="timeline-year">2021 — 2022</div>
+    <div class="job-title" id="j3role">Junior Web Developer — EDUCACROSS</div>
+    <ul class="job-desc" id="j3list">
+      <li>Desenvolvimento de componentes front-end em Vue.js.</li>
+      <li>Otimizações de código que melhoraram a performance da aplicação.</li>
+    </ul>
+  </div>
+</section>
+
+<section class="skills">
+  <h2 id="skillsTitle">Competências Técnicas</h2>
+  <p>Frontend: Vue.js, React, Angular, HTML/CSS</p>
+  <p>Backend: Node.js, .NET Core, MongoDB, Postgres</p>
+  <p>DevOps: Azure, Docker, CI/CD</p>
+</section>
+
+<footer>
+  <div id="footerTxt">Feito com ☕ — Devair Ap. Restani Jr • Leiria, Portugal</div>
+</footer>
+
+<script>
+const T = {
+  pt: {
+    name: "Devair Ap. Restani Jr",
+    title: "Senior Web Developer",
+    summary: "Desenvolvedor de Software Sênior com 5 anos de experiência liderando equipes, projetando arquiteturas robustas e otimizando aplicações para alta performance.",
+    highTitle: "Principais Destaques",
+    h1: "Liderança Técnica",
+    h1txt: "Experiência como líder técnico, mentorando desenvolvedores e guiando equipes na entrega de projetos complexos.",
+    h2: "Arquitetura de Sistemas",
+    h2txt: "Definição e implementação de arquiteturas de micro-serviços, escaláveis e seguras, alinhadas a objetivos de negócio.",
+    h3: "Otimização & Performance",
+    h3txt: "Projetos com redução de custos e melhoria de performance, incluindo unificação de bases e otimização de código.",
+    expTitle: "Experiência Profissional",
+    j1role: "Senior Web Developer — EDUCACROSS",
+    j1list: ["Mentoria e liderança técnica de uma equipe de 4 desenvolvedores.","Definição de arquitetura de micro-serviços, reduzindo 25% dos bugs em produção.","Melhoria da comunicação entre desenvolvimento e negócio."],
+    j2role: "Pleno Web Developer — EDUCACROSS",
+    j2list: ["Unificação de projetos legados (Angular e Vue.js) em uma única base Vue.js.","Redução de custos em 15% e aumento de 30% na performance.","Modernização do código e melhoria de UX."],
+    j3role: "Junior Web Developer — EDUCACROSS",
+    j3list: ["Desenvolvimento de componentes front-end em Vue.js.","Otimizações de código que melhoraram a performance da aplicação."],
+    skillsTitle: "Competências Técnicas",
+    footerTxt: "Feito com ☕︎ — Devair Ap. Restani Jr • Leiria, Portugal"
+  },
+  en: {
+    name: "Devair Ap. Restani Jr",
+    title: "Senior Web Developer",
+    summary: "Senior Software Developer with 5 years of experience leading teams, designing robust architectures, and optimizing high-performance applications.",
+    highTitle: "Key Highlights",
+    h1: "Technical Leadership",
+    h1txt: "Experience as a technical leader, mentoring developers and guiding teams in delivering complex projects.",
+    h2: "Systems Architecture",
+    h2txt: "Definition and implementation of scalable and secure microservice architectures, aligned with business objectives.",
+    h3: "Optimization & Performance",
+    h3txt: "Projects with cost reduction and performance improvement, including database unification and code optimization.",
+    expTitle: "Professional Experience",
+    j1role: "Senior Web Developer — EDUCACROSS",
+    j1list: ["Technical mentorship and leadership of a 4-developer team.","Definition of microservices architecture, reducing production bugs by 25%.","Improved communication between development and business."],
+    j2role: "Web Developer — EDUCACROSS",
+    j2list: ["Unification of legacy projects (Angular and Vue.js) into a single Vue.js codebase.","Cost reduction by 15% and 30% performance increase.","Code modernization and UX improvement."],
+    j3role: "Junior Web Developer — EDUCACROSS",
+    j3list: ["Development of front-end components in Vue.js.","Code optimizations that improved application performance."],
+    skillsTitle: "Technical Skills",
+    footerTxt: "Made with ☕︎ — Devair Ap. Restani Jr • Leiria, Portugal"
+  },
+  it: {
+    name: "Devair Ap. Restani Jr",
+    title: "Senior Web Developer",
+    summary: "Sviluppatore Software Senior con 5 anni di esperienza nella guida di team, progettazione di architetture robuste e ottimizzazione di applicazioni ad alte prestazioni.",
+    highTitle: "Punti di Forza",
+    h1: "Leadership Tecnica",
+    h1txt: "Esperienza come leader tecnico, mentoring di sviluppatori e guida dei team nella consegna di progetti complessi.",
+    h2: "Architettura dei Sistemi",
+    h2txt: "Definizione e implementazione di architetture di microservizi scalabili e sicure, allineate agli obiettivi aziendali.",
+    h3: "Ottimizzazione e Performance",
+    h3txt: "Progetti con riduzione dei costi e miglioramento delle prestazioni, inclusa l'unificazione dei database e l'ottimizzazione del codice.",
+    expTitle: "Esperienza Professionale",
+    j1role: "Senior Web Developer — EDUCACROSS",
+    j1list: ["Mentoring e leadership tecnica di un team di 4 sviluppatori.","Definizione dell'architettura dei microservizi, riducendo i bug in produzione del 25%.","Miglioramento della comunicazione tra sviluppo e business."],
+    j2role: "Web Developer — EDUCACROSS",
+    j2list: ["Unificazione di progetti legacy (Angular e Vue.js) in una singola base Vue.js.","Riduzione dei costi del 15% e aumento delle prestazioni del 30%.","Modernizzazione del codice e miglioramento UX."],
+    j3role: "Junior Web Developer — EDUCACROSS",
+    j3list: ["Sviluppo di componenti front-end in Vue.js.","Ottimizzazioni del codice che hanno migliorato le prestazioni dell'applicazione."],
+    skillsTitle: "Competenze Tecniche",
+    footerTxt: "Fatto con ☕︎ — Devair Ap. Restani Jr • Leiria, Portogallo"
+  }
+};
+
+function translate(lang) {
+  const t = T[lang];
+  document.getElementById("name").textContent = t.name;
+  document.getElementById("title").textContent = t.title;
+  document.getElementById("summary").textContent = t.summary;
+  document.getElementById("highTitle").textContent = t.highTitle;
+  document.getElementById("h1").textContent = t.h1;
+  document.getElementById("h1txt").textContent = t.h1txt;
+  document.getElementById("h2").textContent = t.h2;
+  document.getElementById("h2txt").textContent = t.h2txt;
+  document.getElementById("h3").textContent = t.h3;
+  document.getElementById("h3txt").textContent = t.h3txt;
+  document.getElementById("expTitle").textContent = t.expTitle;
+  document.getElementById("j1role").textContent = t.j1role;
+  document.getElementById("j1list").innerHTML = t.j1list.map(i=>`<li>${i}</li>`).join("");
+  document.getElementById("j2role").textContent = t.j2role;
+  document.getElementById("j2list").innerHTML = t.j2list.map(i=>`<li>${i}</li>`).join("");
+  document.getElementById("j3role").textContent = t.j3role;
+  document.getElementById("j3list").innerHTML = t.j3list.map(i=>`<li>${i}</li>`).join("");
+  document.getElementById("skillsTitle").textContent = t.skillsTitle;
+  document.getElementById("footerTxt").textContent = t.footerTxt;
+}
+
+const userLang = navigator.language.startsWith("en") ? "en" : navigator.language.startsWith("it") ? "it" : "pt";
+document.querySelectorAll(".lang-switch button").forEach(btn=>{
+  btn.classList.toggle("active", btn.dataset.lang === userLang);
+  btn.addEventListener("click",()=>{
+    document.querySelectorAll(".lang-switch button").forEach(b=>b.classList.remove("active"));
+    btn.classList.add("active");
+    translate(btn.dataset.lang);
+  });
+});
+translate(userLang);
+</script>
+</body>
+</html>

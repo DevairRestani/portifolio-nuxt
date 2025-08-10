@@ -1,0 +1,108 @@
+:root {
+  --accent: #1E88E5;
+  --text: #222;
+  --muted: #555;
+  --bg: #fafafa;
+  --font: "Courier New", Courier, monospace;
+}
+body {
+  margin: 0;
+  background: var(--bg) url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="600" height="600"><rect width="600" height="600" fill="%23fafafa"/><circle cx="300" cy="300" r="1" fill="%23eaeaea"/></svg>') repeat;
+  font-family: var(--font);
+  color: var(--text);
+  line-height: 1.6;
+  padding: 40px;
+  max-width: 900px;
+  margin: auto;
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid var(--accent);
+  padding-bottom: 8px;
+  margin-bottom: 20px;
+}
+.lang-switch button {
+  background: transparent;
+  border: 1px solid var(--muted);
+  color: var(--muted);
+  padding: 4px 8px;
+  font-family: var(--font);
+  cursor: pointer;
+  margin-left: 4px;
+}
+.lang-switch button.active {
+  background: var(--accent);
+  color: white;
+  border-color: var(--accent);
+}
+h1, h2, h3 {
+  color: var(--accent);
+  margin: 20px 0 10px 0;
+}
+.hero p {
+  margin: 0 0 10px 0;
+}
+.highlights {
+  margin-top: 30px;
+}
+.highlights p {
+  margin: 0 0 8px 0;
+}
+.timeline {
+  margin-top: 40px;
+}
+.timeline-item {
+  margin-bottom: 24px;
+}
+.timeline-year {
+  font-weight: bold;
+  color: var(--accent);
+}
+.job-title {
+  font-weight: bold;
+}
+.job-desc {
+  margin: 6px 0 0 20px;
+}
+.skills {
+  margin-top: 40px;
+}
+footer {
+  margin-top: 40px;
+  border-top: 1px solid #ccc;
+  padding-top: 10px;
+  font-size: 14px;
+  color: var(--muted);
+}
+
+/* PRINT STYLES */
+@media print {
+  body {
+    background: white !important;
+    border: none !important;
+    padding: 20px !important;
+    max-width: none !important;
+  }
+  h1, h2, h3, .timeline-year {
+    color: black !important;
+  }
+  header, .lang-switch {
+    display: none !important;
+  }
+  a::after {
+    content: " (" attr(href) ")";
+    font-size: 90%;
+    color: #555;
+  }
+  footer {
+    border-top: 1px solid #000;
+    color: black !important;
+  }
+  @page {
+    margin: 0;
+  }
+}
