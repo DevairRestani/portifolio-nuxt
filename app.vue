@@ -78,6 +78,12 @@
       <p>DevOps: Azure, Docker, CI/CD</p>
     </section>
 
+    <section class="contact">
+      <h2 id="contactTitle">{{ t.contactTitle }}</h2>
+      <p>Email: <a href="mailto:devair.restani.dev@gmail.com">devair.restani.dev@gmail.com</a></p>
+      <p>{{ t.phoneLabel }}: +351 924 799 852</p>
+    </section>
+
     <footer>
       <div id="footerTxt">{{ t.footerTxt }}</div>
     </footer>
@@ -112,6 +118,8 @@ const T = {
     j6role: "Student Web Developer — SiplanControl-M - SPCM",
     j6list: ["Trabalhei como desenvolvedor Full Stack em .Net com HTML e CSS."],
     skillsTitle: "Competências Técnicas",
+    contactTitle: "Contato",
+    phoneLabel: "Telefone",
     footerTxt: "Feito com ☕︎ — Devair Ap. Restani Jr • Leiria, Portugal"
   },
   en: {
@@ -138,6 +146,8 @@ const T = {
     j6role: "Student Web Developer — SiplanControl-M - SPCM",
     j6list: ["Worked as a Full Stack developer in .Net with HTML and CSS."],
     skillsTitle: "Technical Skills",
+    contactTitle: "Contact",
+    phoneLabel: "Phone",
     footerTxt: "Made with ☕︎ — Devair Ap. Restani Jr • Leiria, Portugal"
   },
   it: {
@@ -159,11 +169,13 @@ const T = {
     j3role: "Junior Web Developer",
     j3list: ["Sviluppato e mantenuto componenti front-end per un progetto su larga scala in Vue.js, contribuindo ad un aumento della soddisfazione degli utenti.", "Implementato proattivamente ottimizzazioni del codice che hanno migliorato le prestazioni dell'applicazione e il mio rapido adattamento è stato riconosciuto dalla leadership tecnica."],
     j4role: "Junior Software Developer — Cast group",
-    j4list: ["Sviluppato e mantenuto componenti front-end per un progetto su larga scala in Vue.js, contribuindo ad un aumento della soddisfazione degli utenti."],
+    j4list: ["Sviluppato e mantenuto componenti front-end per un progetto su larga scala in Vue.js, contribuendo ad un aumento della soddisfazione degli utenti."],
     
     j6role: "Student Web Developer — SiplanControl-M - SPCM",
     j6list: ["Ho lavorato come sviluppatore Full Stack in .Net con HTML e CSS."],
     skillsTitle: "Competências Técnicas",
+    contactTitle: "Contatto",
+    phoneLabel: "Telefono",
     footerTxt: "Fatto con ☕︎ — Devair Ap. Restani Jr • Leiria, Portogallo"
   }
 };
