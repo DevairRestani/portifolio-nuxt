@@ -1,4 +1,3 @@
-
 <template>
   <div>
     <header>
@@ -81,11 +80,11 @@ const T = {
     h3txt: "Projetos com redução de custos e melhoria de performance, incluindo unificação de bases e otimização de código.",
     expTitle: "Experiência Profissional",
     j1role: "Senior Web Developer — EDUCACROSS",
-    j1list: ["Mentoria e liderança técnica de uma equipe de 4 desenvolvedores.","Definição de arquitetura de micro-serviços, reduzindo 25% dos bugs em produção.","Melhoria da comunicação entre desenvolvimento e negócio."],
+    j1list: ["Mentoria e liderança técnica de uma equipe de 4 desenvolvedores.", "Definição de arquitetura de micro-serviços, reduzindo 25% dos bugs em produção.", "Melhoria da comunicação entre desenvolvimento e negócio."],
     j2role: "Pleno Web Developer — EDUCACROSS",
-    j2list: ["Unificação de projetos legados (Angular e Vue.js) em uma única base Vue.js.","Redução de custos em 15% e aumento de 30% na performance.","Modernização do código e melhoria de UX."],
+    j2list: ["Unificação de projetos legados (Angular e Vue.js) em uma única base Vue.js.", "Redução de custos em 15% e aumento de 30% na performance.", "Modernização do código e melhoria de UX."],
     j3role: "Junior Web Developer — EDUCACROSS",
-    j3list: ["Desenvolvimento de componentes front-end em Vue.js.","Otimizações de código que melhoraram a performance da aplicação."],
+    j3list: ["Desenvolvimento de componentes front-end em Vue.js.", "Otimizações de código que melhoraram a performance da aplicação."],
     skillsTitle: "Competências Técnicas",
     footerTxt: "Feito com ☕︎ — Devair Ap. Restani Jr • Leiria, Portugal"
   },
@@ -102,11 +101,11 @@ const T = {
     h3txt: "Projects with cost reduction and performance improvement, including database unification and code optimization.",
     expTitle: "Professional Experience",
     j1role: "Senior Web Developer — EDUCACROSS",
-    j1list: ["Technical mentorship and leadership of a 4-developer team.","Definition of microservices architecture, reducing production bugs by 25%.","Improved communication between development and business."],
+    j1list: ["Technical mentorship and leadership of a 4-developer team.", "Definition of microservices architecture, reducing production bugs by 25%.", "Improved communication between development and business."],
     j2role: "Web Developer — EDUCACROSS",
-    j2list: ["Unification of legacy projects (Angular and Vue.js) into a single Vue.js codebase.","Cost reduction by 15% and 30% performance increase.","Code modernization and UX improvement."],
+    j2list: ["Unification of legacy projects (Angular and Vue.js) into a single Vue.js codebase.", "Cost reduction by 15% and 30% performance increase.", "Code modernization and UX improvement."],
     j3role: "Junior Web Developer — EDUCACROSS",
-    j3list: ["Development of front-end components in Vue.js.","Code optimizations that improved application performance."],
+    j3list: ["Development of front-end components in Vue.js.", "Code optimizations that improved application performance."],
     skillsTitle: "Technical Skills",
     footerTxt: "Made with ☕︎ — Devair Ap. Restani Jr • Leiria, Portugal"
   },
@@ -123,11 +122,11 @@ const T = {
     h3txt: "Progetti con riduzione dei costi e miglioramento delle prestazioni, inclusa l'unificazione dei database e l'ottimizzazione del codice.",
     expTitle: "Esperienza Professionale",
     j1role: "Senior Web Developer — EDUCACROSS",
-    j1list: ["Mentoring e leadership tecnica di un team di 4 sviluppatori.","Definizione dell'architettura dei microservizi, riducendo i bug in produzione del 25%.","Miglioramento della comunicazione tra sviluppo e business."],
+    j1list: ["Mentoring e leadership tecnica di un team di 4 sviluppatori.", "Definizione dell'architettura dei microservizi, riducendo i bug in produzione del 25%.", "Miglioramento della comunicazione tra sviluppo e business."],
     j2role: "Web Developer — EDUCACROSS",
-    j2list: ["Unificazione di progetti legacy (Angular e Vue.js) in una singola base Vue.js.","Riduzione dei costi del 15% e aumento delle prestazioni del 30%.","Modernizzazione del codice e miglioramento UX."],
+    j2list: ["Unificazione di progetti legacy (Angular e Vue.js) in una singola base Vue.js.", "Riduzione dei costi del 15% e aumento delle prestazioni del 30%.", "Modernizzazione del codice e miglioramento UX."],
     j3role: "Junior Web Developer — EDUCACROSS",
-    j3list: ["Sviluppo di componenti front-end in Vue.js.","Ottimizzazioni del codice che hanno migliorato le prestazioni dell'applicazione."],
+    j3list: ["Sviluppo di componenti front-end in Vue.js.", "Ottimizzazioni del codice che hanno migliorato le prestazioni dell'applicazione."],
     skillsTitle: "Competenze Tecniche",
     footerTxt: "Fatto con ☕︎ — Devair Ap. Restani Jr • Leiria, Portogallo"
   }
@@ -146,5 +145,3 @@ onMounted(() => {
   setLang(userLang);
 });
 </script>
-
-
